@@ -11,9 +11,9 @@
         justify-content: space-between;
         align-items: center;
     }
-    // &__menu--logo{
-    //     width: 100%;
-    // }
+    &__menu--logo {
+        padding: 48px 16px 16px 16px;
+    }
     &__menu--nav{
         display: flex;
         flex-direction: column;
