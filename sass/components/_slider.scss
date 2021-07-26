@@ -1,0 +1,63 @@
+.slider{
+    margin-top: 132px;
+    position: relative;
+    width: 100%;
+    &__img{
+        width: 100%;
+    }
+    &__bgimg{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    &__content{
+        position: absolute;
+        top: 25%;
+        width: 60%;
+        color: #fff;
+    }
+    &__mobile{
+        display: none;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__desc{
+        margin-bottom: 20px;
+    }
+    &__btn{
+        @include btn;
+        &:hover{
+            background-color: $colorprimary;
+            color: #fff;
+        }
+    }
+    &__text{
+        width: 100%;
+        color: #fff;
+        background-color: $colorsub;
+    }
+    &__text--body{
+        padding: 16px 0;
+    }
+    &__text--title{
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    &__text--desc{
+        margin: 8px;
+    }
+    &__text--btn,&__mobile--btn{
+        float: right;
+        transform: translateY(-65px);
+        @include btn;
+        @include btn__white;
+        &:hover{
+            background-color: $colorprimary;
+            color: #fff;
+        }
+    }
+    &__mobile--btn{
+        display: none;
+    }
+}

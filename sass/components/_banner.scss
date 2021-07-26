@@ -1,0 +1,36 @@
+.banner{
+    width: 100%;
+    min-height: 280px;
+    position: relative;
+    margin-bottom: 64px;
+    background-color: $colorprimary;
+    &__img{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+    &__mobile--img{
+        display: none;
+    }
+    &__content{
+        width: 85%;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        color: #fff;
+    }
+    &__title{
+        margin: 16px 0;
+    }
+    &__desc{
+        margin-bottom: 32px;
+    }
+    &__btn{
+        @include btn;
+        &:hover{
+            background-color: $bgcolorcontact;
+            color: #000;
+        }
+    }
+}
