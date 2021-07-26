@@ -42,10 +42,19 @@
         margin: 32px 0;
     }
     .news__top{
-        display: block;
+        /* display: block; */
     }
     .news__top--item{
-        width: 100%;
+        width: 47%;
+        height: auto;
+        margin-right: 16px;
+        margin-bottom: 32px;
+    }
+    .news__item--content{
+        height: 260px;
+    }
+    .news__mobile--btn{
+        bottom: 1%;
     }
     .banner{
         background-color: #0e5a61;
