@@ -248,6 +248,9 @@
     .banner__desc{
         width: 90%;
     }
+    .banner__btn{
+        padding: 8px 12px;
+    }
     /* end banner */
     /* begin about css */
     .about__news{
