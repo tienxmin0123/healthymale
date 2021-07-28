@@ -94,7 +94,7 @@ h1, h2, h3, h4.h5.h6 {
 }
 
 .header__menu--logo {
-  padding: 48px 16px 16px 16px;
+  padding: 32px 16px 16px 16px;
 }
 
 .header__menu--nav {
@@ -127,6 +127,12 @@ h1, h2, h3, h4.h5.h6 {
   padding: 12px 8px;
 }
 
+.header__menu--navtop ul li:hover, .header__menu--navbottom ul li:hover {
+  background-color: #f15f4e;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
 .header__menu--navtop {
   line-height: 39px;
 }
@@ -140,10 +146,6 @@ h1, h2, h3, h4.h5.h6 {
   font-size: 1.4rem;
 }
 
-.header__menu--navtop ul li:hover {
-  background-color: #f15f4e;
-}
-
 .header__menu--navtop ul input {
   border: none;
   padding: 12px;
@@ -152,7 +154,8 @@ h1, h2, h3, h4.h5.h6 {
 .header__search {
   position: absolute;
   top: 18%;
-  right: 5%;
+  right: calc((100% - 1072px) / 2);
+  padding-right: 32px;
 }
 
 .header__search a {
@@ -543,7 +546,7 @@ h1, h2, h3, h4.h5.h6 {
 
 .banner {
   width: 100%;
-  min-height: 280px;
+  min-height: 320px;
   position: relative;
   margin-bottom: 64px;
   background-color: #0e5a61;
@@ -573,7 +576,8 @@ h1, h2, h3, h4.h5.h6 {
 }
 
 .banner__desc {
-  margin-bottom: 32px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .banner__btn {
@@ -583,6 +587,7 @@ h1, h2, h3, h4.h5.h6 {
   background-color: #f15f4e;
   color: #fff;
   display: inline-block;
+  margin-top: 32px;
 }
 
 .banner__btn:hover {
@@ -598,7 +603,7 @@ h1, h2, h3, h4.h5.h6 {
 }
 
 .contact__content {
-  width: 30%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -657,6 +662,12 @@ h1, h2, h3, h4.h5.h6 {
   color: #fff;
   text-transform: uppercase;
   border: none;
+}
+
+.contact__btn--subscribe:hover {
+  background-color: #f15f4e;
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
 .footer {

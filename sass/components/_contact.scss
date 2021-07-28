@@ -4,7 +4,7 @@
     text-align: center;
     padding-bottom: 64px;
     &__content{
-        width: 30%;
+        width: 70%;
         margin: 0 auto;
     }
     &__title{
@@ -50,5 +50,9 @@
         color: #fff;
         text-transform: uppercase;
         border: none;
+        &:hover{
+            background-color: $colorsub;
+            transition: 0.5;
+        }
     }
 }

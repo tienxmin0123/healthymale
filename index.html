@@ -17,30 +17,30 @@
                 <div class="header__menu--logo">
                     <img src="./assets/images/Image 1.png" alt="" class="header__logo">
                 </div>
-                <div class="header__menu--nav">
-                    <div class="header__menu--navtop">
+                <div class="header__menu--nav js__header__nav">
+                    <div class="header__menu--navtop js__menu__nav">
                         <ul>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Order resources</a></li>
                             <li><a href="#">Subscribe</a></li>
                             <li><a href="#">The Male</a></li>
                         </ul>
-                        <div class="header__search">
-                            <input type="text" class="header__menu--search" placeholder="Search">
-                            <a href=""><i class="ti-search"></i></a>
-                        </div>
-                        <div class="header__more--menu">
-                            <a href=""><i class="ti-menu"></i></a>
-                        </div>
                     </div>
-                    <div class="header__menu--navbottom">
+                    <div class="header__search">
+                        <input type="text" class="header__menu--search" placeholder="Search">
+                        <a href=""><i class="ti-search"></i></a>
+                    </div>
+                    <div class="header__menu--navbottom js__menu__nav">
                         <ul>
                             <li><a href="#">Men's healthy</a></li>
                             <li><a href="#">Resources & tools</a></li>
                             <li><a href="#">For healthy professionals</a></li>
                             <li><a href="#">News</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Contact us</a></li>
                         </ul>
+                    </div>
+                    <div class="header__more--menu js__more--menu">
+                        <a href="#"><i class="ti-menu"></i></a>
                     </div>
                 </div>
             </div>
@@ -272,9 +272,9 @@
                             <input type="text" name="year" id="" placeholder="YY" required class="contact__form--controldob">
                         </div>
                         <p class="contact__radio">Which newsletter/s would you like to subscribe to?</p>
-                            <input type="radio" name="subscribe to">
+                            <input type="checkbox" name="subscribe to">
                             <label for="for men,family and friends">For men,family and friends</label><br>
-                            <input type="radio" name="subscribe to">
+                            <input type="checkbox" name="subscribe to">
                             <label class="contact__radio--lable" for="for health,professionals and organisations">For health,professionals and organisations</label>
                             <div class="contact__btn">
                                 <input type="submit" value="Subscribe" class="contact__btn--subscribe">
@@ -332,6 +332,18 @@
             </div>
         </div>
     </footer>
-    
+    <!-- <script>
+        const moreBtn = document.querySelector('.js__more--menu');
+        const headerMenuNav = document.querySelector('.js_header__nav')
+        const addOpenNav = document.querySelectorAll('.js__menu__nav')
+        function showMenuNav(){
+            addOpenNav.classList.add('js__open__menu')
+        }
+        function hideMenuNav(){
+            addOpenNav.classList.remove('js__open__menu')
+        }
+        moreBtn.addEventListener('click',showMenuNav)
+
+    </script> -->
 </body>
 </html>

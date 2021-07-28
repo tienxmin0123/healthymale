@@ -1,6 +1,6 @@
 .banner{
     width: 100%;
-    min-height: 280px;
+    min-height: 320px;
     position: relative;
     margin-bottom: 64px;
     background-color: $colorprimary;
@@ -24,10 +24,12 @@
         margin: 16px 0;
     }
     &__desc{
-        margin-bottom: 32px;
+        width: 50%;
+        margin: 0 auto;
     }
     &__btn{
         @include btn;
+        margin-top: 32px;
         &:hover{
             background-color: $bgcolorcontact;
             color: #000;

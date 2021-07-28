@@ -57,6 +57,7 @@
         bottom: 1%;
     }
     .banner{
+        min-height: 320px;
         background-color: #0e5a61;
     }
     .banner__img{
@@ -74,6 +75,10 @@
     .banner__title{
         font-size: 2.4rem;
     }
+    .banner__desc{
+        width: 75%;
+    }
+    
     .contact__content{
         width: 100%;
     }
@@ -96,18 +101,18 @@
         /* position: relative; */
         width: 100%;
     }
-    .header__menu{
-    }
     .header__menu--logo{
-        width: 251px;
         display: inline-block;
-        margin: 16px 8px;
+        transform: translateY(-20%);
     }
     .header__logo{
-
+        width: 85%;
     }
     .header__menu--navtop>ul,.header__menu--navbottom>ul{
         display: none;
+    }
+    .js__open__menu{
+        display: flex;
     }
     .header__search{
         top: 55%;
@@ -115,11 +120,17 @@
         width: 100%;
     }
     .header__menu--search{
-        width: 65%;
+        width: 70%;
     }
     .header__more--menu{
         display: block;
         right: 5%;
+    }
+    .header__more--menu a{
+        padding: 22px 18px 15px 18px;
+    }
+    .header__more--menu a i{
+        padding: 0;
     }
     /* css mobile slider */
     .slier{
@@ -175,6 +186,7 @@
         margin-bottom: 24px;
         display: flex;
         width: 100%;
+        height: 175px;
     }
     .news__item--img{
         height: 100%;
@@ -185,6 +197,7 @@
         line-height: 1.4;
         padding: 8px;
         width: 100%;
+        height: auto;
     }
     .news__item--title{
         font-size: 1.8rem;
@@ -205,8 +218,8 @@
     }
     .news__item--btn{
         margin: 0;
-        padding: 8px 18px;
-        font-size: 1.4rem;
+        padding: 8px;
+        font-size: 1.2rem;
     }
     .news__main--video{
         width: 100%;
@@ -215,6 +228,9 @@
         display: none;
     }
     /* banner */
+    .banner{
+        min-height: 400px;
+    }
     .banner__img{
         display: none;
     }
@@ -228,6 +244,9 @@
     }
     .banner__title{
         font-size: 2.4rem;
+    }
+    .banner__desc{
+        width: 90%;
     }
     /* end banner */
     /* begin about css */
@@ -259,10 +278,10 @@
         justify-content: unset;
     }
     .contact__form--control{
-        width: 100%;
+        width: 90%;
     }
     .contact__form--controldob{
-        width: 35%;
+        width: 36%;
     }
     .contact__form--dobdd{
         display: none;
