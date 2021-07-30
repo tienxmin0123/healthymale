@@ -6,14 +6,14 @@
         justify-content: space-between;
         padding: 64px 0;
     }
-    &__logo--img{
+    &__logo__img{
         color: $colorcontact;
         width: 75%;
     }
-    &__menu--mobile{
+    &__menu__mobile{
         display: none;
     }
-    &__menu--row,&__mobile--row{
+    &__menu__row,&__mobile__row{
         display: flex;
         flex-direction: column;
         // line-height: 2.4;

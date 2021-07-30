@@ -12,8 +12,8 @@
     }
     &__content{
         position: absolute;
-        top: 25%;
-        width: 60%;
+        bottom: 42%;
+        width: 35%;
         color: #fff;
     }
     &__mobile{
@@ -26,10 +26,11 @@
         margin-bottom: 20px;
     }
     &__btn{
-        @include btn;
-        &:hover{
-            background-color: $colorprimary;
-            color: #fff;
+        a{
+            &:hover{
+                background-color: $colorprimary;
+                color: #fff;
+            }
         }
     }
     &__text{
@@ -37,27 +38,25 @@
         color: #fff;
         background-color: $colorsub;
     }
-    &__text--body{
+    &__text__body{
         padding: 16px 0;
     }
-    &__text--title{
+    &__text__title{
         display: inline-block;
         margin-bottom: 8px;
     }
-    &__text--desc{
-        margin: 8px;
+    &__text__desc{
+        margin: 8px 0;
     }
-    &__text--btn,&__mobile--btn{
+    &__text__btn,&__mobile__btn{
         float: right;
         transform: translateY(-65px);
-        @include btn;
-        @include btn__white;
         &:hover{
             background-color: $colorprimary;
             color: #fff;
         }
     }
-    &__mobile--btn{
+    &__mobile__btn{
         display: none;
     }
 }

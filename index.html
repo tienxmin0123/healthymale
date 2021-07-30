@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Healthy male</title>
 </head>
 <body>
@@ -14,11 +15,15 @@
         <!-- Begin header -->
         <div class="container">
             <div class="header__menu">
-                <div class="header__menu--logo">
+                <div class="header__menu__logo">
                     <img src="./assets/images/Image 1.png" alt="" class="header__logo">
                 </div>
-                <div class="header__menu--nav js__header__nav">
-                    <div class="header__menu--navtop js__menu__nav">
+                <div class="header__search header__search__menu">
+                    <input type="text" class="header__menu__search" placeholder="Search">
+                    <div class="header__icon__search"><a href=""><i class="ti-search"></i></a></div>
+                </div>
+                <div class="header__menu__nav js__menu__nav">
+                    <div class="header__menu__navtop">
                         <ul>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Order resources</a></li>
@@ -26,11 +31,11 @@
                             <li><a href="#">The Male</a></li>
                         </ul>
                     </div>
-                    <div class="header__search">
-                        <input type="text" class="header__menu--search" placeholder="Search">
-                        <a href=""><i class="ti-search"></i></a>
+                    <div class="header__search header__search__nav">
+                        <input type="text" class="header__menu__search" placeholder="Search">
+                        <div class="header__icon__search"><a href=""><i class="ti-search"></i></a></div>
                     </div>
-                    <div class="header__menu--navbottom js__menu__nav">
+                    <div class="header__menu__navbottom">
                         <ul>
                             <li><a href="#">Men's healthy</a></li>
                             <li><a href="#">Resources & tools</a></li>
@@ -39,9 +44,9 @@
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>
-                    <div class="header__more--menu js__more--menu">
-                        <a href="#"><i class="ti-menu"></i></a>
-                    </div>
+                </div>
+                <div class="header__more__menu js__more__menu">
+                    <a href="#"><i class="ti-menu"></i></a>
                 </div>
             </div>
         </div>
@@ -56,31 +61,37 @@
             <div class="slider__mobile"></div>
             <div class="container">
                 <div class="slider__content">
-                    <h1 class="slider__title">
-                        Plus Paternal:
-                        A focus on fathers
-                    </h1>
-                    <p class="slider__desc">
-                        we're calling for a fundamental shift in the way society and the healthy system view fathers. Will you support the Case for Change?
-                    </p>
-                    <a href="#" class="slider__btn">See the case for change</a>
+                    <div class="slider__title"><h1>
+                        Plus Paternal: </br>
+                            A focus on fathers
+                        </h1>
+                    </div>
+                    <div class="slider__desc">
+                        <p>
+                            We're calling for a fundamental shift in the way society and the healthy system view fathers. You support the Case for Change?
+                        </p>
+                    </div>
+                    <div class="slider__btn">
+                        <a href="#" class="btn">See the case for change</a>
+                    </div>
                 </div>
             </div>
             <!-- begin slider text -->
             <div class="slider__text">
                 <div class="container">
-                    <div class="slider__text--body">
-                        <h3 class="slider__text--title">
+                    <div class="slider__text__body">
+                        <div><h3 class="slider__text__title">
                             Due to COVID-19, you may be feeling anxious, stressed and worried
-                        </h3>
-                        <p class="slider__text--desc">
+                        </h3></div>
+                        <div><p class="slider__text__desc">
                             If you're struggling to cope and need someone to talk to, there's help out there.
                         </p>
-                        <div>
-                            <a href="" class="slider__text--btn">Find out more</a>
                         </div>
                         <div>
-                            <a href="" class="slider__mobile--btn">odder now</a>
+                            <a href="" class="slider__text__btn btn btn__white">Find out more</a>
+                        </div>
+                        <div>
+                            <a href="" class="slider__mobile__btn btn btn__white">odder now</a>
                         </div>
 
                     </div>
@@ -94,71 +105,71 @@
             <div class="container">
                 <!-- begin news top -->
                 <div class="news__top">
-                    <div class="news__top--item">
-                        <img src="./assets/images/iStock-1227005375_HPMen's HealthTopics.png" alt="" class="news__item--img">
-                        <div class="news__item--content">
-                            <h3 class="news__item--title">Men's health topics</h3>
-                            <p class="news__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div class="news__mobile--desc">information an a range of men's health conditions</div>
-                            <div class="news__mobile--btn"><a href="#" class="news__item--btn">Find out more</a></div>
+                    <div class="news__top__item">
+                        <img src="./assets/images/oldmen.png" alt="" class="news__item__img">
+                        <div class="news__item__content">
+                            <div><h3 class="news__item__title">Men's health topics</h3></div>
+                            <div><p class="news__item__desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p></div>
+                            <div class="news__mobile__desc">information an a range of men's health conditions</div>
+                            <div class="news__top__btn"><a href="#" class="news__item__btn btn">Find out more</a></div>
                         </div>
                     </div>
-                    <div class="news__top--item">
-                        <img src="./assets/images/iStock-1185966868_HPLatest News.png" alt="" class="news__item--img">
-                        <div class="news__item--content">
-                            <h3 class="news__item--title">Latest news</h3>
-                            <p class="news__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div class="news__mobile--desc">Stay informed on men's health issues</div>
-                            <div class="news__mobile--btn"><a href="#" class="news__item--btn">Find out more</a></div>
+                    <div class="news__top__item">
+                        <img src="./assets/images/youngman.png" alt="" class="news__item__img">
+                        <div class="news__item__content">
+                            <div><h3 class="news__item__title">Latest news</h3></div>
+                            <div><p class="news__item__desc">Stay informed on men's health inssues with articles for men and boys their family and friends, and health professionals professionals.</p></div>
+                            <div class="news__mobile__desc">Stay informed on men's health issues</div>
+                            <div class="news__top__btn"><a href="#" class="news__item__btn btn">Find out more</a></div>
                         </div>
                     </div>
-                    <div class="news__top--item">
-                        <img src="./assets/images/5cf38bdf5fa5638c1c926e0977350c96.png" alt="" class="news__item--img">
-                        <div class="news__item--content">
-                            <h3 class="news__item--title">Your stories</h3>
-                            <p class="news__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div class="news__mobile--desc">Real stories form real Aussie men</div>
-                            <div class="news__mobile--btn"><a href="#" class="news__item--btn">Find out more</a></div>
+                    <div class="news__top__item">
+                        <img src="./assets/images/friends.png" alt="" class="news__item__img">
+                        <div class="news__item__content">
+                            <div><h3 class="news__item__title">Your stories</h3></div>
+                            <div><p class="news__item__desc">Real stories from real Aussie men who have lived with, or currently live with, a health condition, these stories hope, inspire, and change lives.</p></div>
+                            <div class="news__mobile__desc">Real stories form real Aussie men</div>
+                            <div class="news__top__btn"><a href="#" class="news__item__btn btn">Find out more</a></div>
                         </div>
                     </div>
-                    <div class="news__top--item">
-                        <img src="./assets/images/iStock-1185966868_HPLatest News.png" alt="" class="news__item--img">
-                        <div class="news__item--content">
-                            <h3 class="news__item--title">Resource library</h3>
-                            <p class="news__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div class="news__mobile--desc">Browse through our resource library</div>
-                            <div class="news__mobile--btn"><a href="#" class="news__item--btn">Find out more</a></div>
+                    <div class="news__top__item">
+                        <img src="./assets/images/newslibrary.png" alt="" class="news__item__img">
+                        <div class="news__item__content">
+                            <div><h3 class="news__item__title">Resource library</h3></div>
+                            <div><p class="news__item__desc">Browse through our resource library and download resources baner the reproductive and sexual condition that can affrct you.</p></div>
+                            <div class="news__mobile__desc">Browse through our resource library</div>
+                            <div class="news__top__btn"><a href="#" class="news__item__btn btn">Find out more</a></div>
                         </div>
                     </div>
                 </div>
                 <!-- end news top -->
                 <!-- begin new bottom -->
                 <div class="news__bottom">
-                    <h2 class="news__bottom--title">
+                    <h2 class="news__bottom__title">
                         Most viewed
                     </h2>
-                    <div class="news__bottom--videos">
-                        <div class="news__video--main">
-                            <img src="./assets/images/Image 2@3x.png" alt="" class="news__main--video">
-                            <img src="./assets/images/Play.png" alt="" class="news__video--play">
+                    <div class="news__bottom__videos">
+                        <div class="news__video__main">
+                            <img src="./assets/images/Image 2@3x.png" alt="" class="news__main__video">
+                            <img src="./assets/images/Play.png" alt="" class="news__video__play">
                         </div>
-                        <div class="news__videos--sub">
+                        <div class="news__videos__sub">
                             <div class="news__subnews">
-                                <img src="./assets/images/Image 2.png" alt="" class="news__videos--subnews">
-                                <img src="./assets/images/Play.png" alt="" class="news__video--playsub">
+                                <img src="./assets/images/Image 2.png" alt="" class="news__videos__subnews">
+                                <img src="./assets/images/Play.png" alt="" class="news__video__playsub">
                             </div>
                             <div class="news__subnews">
-                                <img src="./assets/images/Image 2.png" alt="" class="news__videos--subnews">
-                                <img src="./assets/images/Play.png" alt="" class="news__video--playsub">
+                                <img src="./assets/images/Image 2.png" alt="" class="news__videos__subnews">
+                                <img src="./assets/images/Play.png" alt="" class="news__video__playsub">
                             </div>
                             <div class="news__subnews">
-                                <img src="./assets/images/Image 2.png" alt="" class="news__videos--subnews">
-                                <img src="./assets/images/Play.png" alt="" class="news__video--playsub">
+                                <img src="./assets/images/Image 2.png" alt="" class="news__videos__subnews">
+                                <img src="./assets/images/Play.png" alt="" class="news__video__playsub">
                             </div>
                         </div>
                     </div>
-                    <div class="news__bottom--btn">
-                        <a href="#" class="news__btn">Watch more videos</a>
+                    <div class="news__bottom__btn">
+                        <a href="#" class="news__btn btn">Watch more videos</a>
                     </div>
                 </div>
             </div>
@@ -167,17 +178,21 @@
         <!-- begin banner -->
         <div class="banner">
             <div>
-                <img src="./assets/images/aa21316_website_banners-1920x680_3_6@3x.png" alt="" class="banner__img">
-                <img src="./assets/images/aa21316_website_banners-1920x680_3_3@3x.png" alt="" class="banner__mobile--img">
+                <img src="./assets/images/education.png" alt="" class="banner__img">
+                <img src="./assets/images/download.png" alt="" class="banner__mobile__img">
             </div>
+            <!-- <picture>
+                <source media="(min-width: 768px)" srcset="./assets/images/education.png">
+                <img src="./assets/images/download.png">
+              </picture> -->
             <div class="container">
                 <div class="banner__content">
-                    <h2 class="banner__title">Education and training for health professionals</h2>
-                    <p class="banner__desc">Advance you knowledge and skills in male reproductive and sexual health with our active learning modules(ALMs)
+                    <div><h2 class="banner__title">Education and training for health professionals</h2></div>
+                    <div><p class="banner__desc">Advance you knowledge and skills in male reproductive and sexual health with our active learning modules(ALMs)
                         .Accredited by leading health organisations RACGP,ACRRM and APNA offers high quality, structured and self-directed learning opportunities.
-                    </p>
+                    </p></div>
                     <div>
-                        <a href="#" class="banner__btn">find out more</a>
+                        <a href="#" class="banner__btn btn">find out more</a>
                     </div>
                 </div>
             </div>
@@ -187,52 +202,52 @@
         <div class="about">
             <div class="container">
                 <div class="about__news">
-                    <div class="about__news--item">
-                        <img src="./assets/images/Image 3.png" alt="" class="about__item--img">
-                        <div class="about__item--content">
-                            <p class="about__news--date">
-                                20 Jan 2021 <span class="about__time--read"><i class="ti-alarm-clock"></i>12 min read</span>
-                            </p>
-                            <h3 class="about__item--title">Men's health topics</h3>
-                            <p class="about__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div><a href="#" class="about__item--btn">Read more</a></div>
+                    <div class="about__news__item">
+                        <img src="./assets/images/Image 3.png" alt="" class="about__item__img">
+                        <div class="about__item__content">
+                            <div><p class="about__news__date">
+                                20 Jan 2021 <span class="about__time__read"><i class="ti-alarm-clock"></i>12 min read</span>
+                            </p></div>
+                            <div><h3 class="about__item__title">Men's health topics</h3></div>
+                            <div><p class="about__item__desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p></div>
+                            <div class="about__btn__rmn"><a href="#"  >Read more</a></div>
                         </div>
                     </div>
-                    <div class="about__news--item">
-                        <img src="./assets/images/Image 3.png" alt="" class="about__item--img">
-                        <div class="about__item--content">
-                            <p class="about__news--date">
-                                20 Jan 2021 <span class="about__time--read"><i class="ti-alarm-clock"></i>12 min read</span>
-                            </p>
-                            <h3 class="about__item--title">Men's health topics</h3>
-                            <p class="about__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div><a href="#" class="about__item--btn">Read more</a></div>
+                    <div class="about__news__item">
+                        <img src="./assets/images/aboubike.png" alt="" class="about__item__img">
+                        <div class="about__item__content">
+                            <div><p class="about__news__date">
+                                22 Jul 2021 <span class="about__time__read"><i class="ti-alarm-clock"></i>3 min read</span>
+                            </p></div>
+                            <div><h3 class="about__item__title">Men's health topics</h3></div>
+                            <div><p class="about__item__desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p></div>
+                            <div class="about__btn__rmn"><a href="#"  >Read more</a></div>
                         </div>
                     </div>
-                    <div class="about__news--item">
-                        <img src="./assets/images/Image 3.png" alt="" class="about__item--img">
-                        <div class="about__item--content">
-                            <p class="about__news--date">
-                                20 Jan 2021 <span class="about__time--read"> <i class="ti-alarm-clock"></i> 12 min read</span>
-                            </p>
-                            <h3 class="about__item--title">Men's health topics</h3>
-                            <p class="about__item--desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p>
-                            <div><a href="#" class="about__item--btn">Read more</a></div>
+                    <div class="about__news__item">
+                        <img src="./assets/images/aboutstrong.png" alt="" class="about__item__img">
+                        <div class="about__item__content">
+                            <div><p class="about__news__date">
+                                20 Jul 2021  <span class="about__time__read"><i class="ti-alarm-clock"></i>5 min read</span>
+                            </p></div>
+                            <div><h3 class="about__item__title">Men's health topics</h3></div>
+                            <div><p class="about__item__desc">Make informed decisions about your health easy-to-understand information on range of man's  health conditions </p></div>
+                            <div class="about__btn__rmn"><a href="#"  >Read more</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="about__news--btn">
-                    <a href="" class="about__btn--rmn">Read more news</a>
+                <div class="about__news__btn">
+                    <a href="" class="btn">Read more news</a>
                 </div>
                 <div class="about__content">
-                    <h2 class="about__title">
+                    <div><h2 class="about__title">
                         About Healthy Male
-                    </h2>
-                    <p class="about__desc">Healthy male Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui libero!!</p>
-                    <p class="about__desc"> Repudiandae animi aperiam optio officiis ab in, obcaecati necessitatibus eum quaerat quam saepe at ex, autem adipisci explicabo ratione</p>
-                    <p class="about__desc">Healthy male Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui libero!! <a href="#">Australian Governments Department of healthy</a></p>
-                    <div>
-                        <a href="" class="about__btn">Find out more</a>
+                    </h2></div>
+                    <div><p class="about__desc">Healthy Male (previously known as Andrology Australia) is a national organisation that provides easy access to the latest scientific and medical research on male reproductive and sexual health.</p></div>
+                    <div><p class="about__desc">Our aim is to make this information available to everybody, regardless of gender, age, education, sexual orientation, religion or ethnicity. To do this, we collaborate with Australia’s leading researchers, specialists, clinicians and educators to develop information that fills the gaps in men’s health.</p></div>
+                    <div><p class="about__desc">Healthy Male is funded by the<a href="#"> Australian Governments Department of healthy</a></p></div>
+                    <div class="about__btn">
+                        <a href="" class="btn">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -242,43 +257,46 @@
         <div class="contact">
             <div class="container">
                 <div class="contact__content">
-                    <h2 class="contact__title">Subscribe to the monthly newsletter</h2>
+                    <div><h2 class="contact__title">Subscribe to the monthly newsletter</h2></div>
                     <div class="contact__desc">each month we release two email newsletters - one written for men, family and friend, and another for health professionals</div>
                 </div>
-                <form action="#" class="contact__form">
-                    <div class="contact__form--group">
-                        <div class="contact__form--email">
-                            <label class="contact__femail" for="email">Email address:</label></br>
-                            <input type="text" required class="contact__form--control" placeholder="Your Email" name="email" value="">
-                        </div>
-                        <div class="contact__form--name">
-                            <label class="contact__fname" for="name">Name:</label></br>
-                            <input type="text" required class="contact__form--control" placeholder="Your Name" name="your name" value="">
-                        </div>
-                        <div class="contact__form--gender">
-                            <label class="fgender" for="gender">Gender:</label></br>
-                            <select name="gender"  class="contact__form--control">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="contact__row">
-                        <div class="contact__form--dob">
-                            <label class="dob" for="date of birth">Date Of Birth:</label></br>
-                            <input type="text" name="day" id="" placeholder="DD" required class="contact__form--controldob contact__form--dobdd">
-                            <input type="text" name="month" id="" placeholder="MM" required class="contact__form--controldob">
-                            <input type="text" name="year" id="" placeholder="YY" required class="contact__form--controldob">
-                        </div>
-                        <p class="contact__radio">Which newsletter/s would you like to subscribe to?</p>
-                            <input type="checkbox" name="subscribe to">
-                            <label for="for men,family and friends">For men,family and friends</label><br>
-                            <input type="checkbox" name="subscribe to">
-                            <label class="contact__radio--lable" for="for health,professionals and organisations">For health,professionals and organisations</label>
-                            <div class="contact__btn">
-                                <input type="submit" value="Subscribe" class="contact__btn--subscribe">
+                <form action="#">
+                    <div class="contact__form">
+                        <div class="contact__form__left">
+                            <div class="contact__form__email">
+                                <label class="contact__femail" for="email">Email address:</label></br>
+                                <input type="text" required class="contact__form__control" placeholder="Your Email" name="email" value="">
                             </div>
+                            <div class="contact__form__name">
+                                <label class="contact__fname" for="name">Name:</label></br>
+                                <input type="text" required class="contact__form__control" placeholder="Your Name" name="your name" value="">
+                            </div>
+                            <div class="contact__form__gender">
+                                <label class="fgender" for="gender">Gender:</label></br>
+                                <select name="gender"  class="contact__form__control">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="contact__form__right">
+                            <div class="contact__form__dob">
+                                <label class="dob" for="date of birth">Date Of Birth:</label></br>
+                                <input type="text" name="day" id="" placeholder="DD" required class="contact__form__controldob contact__form__dobdd">
+                                <input type="text" name="month" id="" placeholder="MM" required class="contact__form__controldob">
+                                <input type="text" name="year" id="" placeholder="YY" required class="contact__form__controldob">
+                            </div>
+                            <div class="contact__radio"><p> Which newsletter/s would you like to subscribe to?</p></div>
+                                <input type="checkbox" name="subscribe to">
+                                <label class="contact__radio__lable" for="for men,family and friends">For men, family and friends</label><br>
+                                <input type="checkbox" name="subscribe to">
+                                <label class="contact__radio__lable" for="for health,professionals and organisations">For health, professionals and organisations</label>
+                                <div class="contact__btn">
+                                    <input type="submit" value="Subscribe" class="contact__btn__subscribe">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -289,19 +307,19 @@
         <div class="container">
             <div class="footer__menu">
                 <div class="footer__logo">
-                    <img src="./assets/images/Image 4.png" alt="" class="footer__logo--img">
+                    <img src="./assets/images/Image 4.png" alt="" class="footer__logo__img">
                 </div>
-                <div class="footer__menu--row">
+                <div class="footer__menu__row">
                     <a href="" class="footer__session">About us</a>
                     <a href="" class="footer__session">Find a doctor</a>
                     <a href="" class="footer__session">Men's healthy</a>
                 </div>
-                <div class="footer__menu--row">
+                <div class="footer__menu__row">
                     <a href="" class="footer__session">Careers</a>
                     <a href="" class="footer__session">Glossary</a>
                     <a href="" class="footer__session">Resource library</a>
                 </div>
-                <div class="footer__menu--row">
+                <div class="footer__menu__row">
                     <a href="" class="footer__session">Donate</a>
                     <a href="" class="footer__session">For health professionals</a>
                     <a href="" class="footer__session">Resource & tools</a>
@@ -313,15 +331,15 @@
                     <a href="#" class="footer__item"><i class="ti-instagram"></i></a>
                     <a href="#" class="footer__item"><i class="ti-linkedin"></i></a>
                 </div>
-                <div class="footer__menu--mobile">
-                    <div class="footer__mobile--row">
+                <div class="footer__menu__mobile">
+                    <div class="footer__mobile__row">
                         <a href="" class="footer__session">About us</a>
                         <a href="" class="footer__session">Find a doctor</a>
                         <a href="" class="footer__session">Men's healthy</a>
                         <a href="" class="footer__session">Contact us</a> 
                         <a href="" class="footer__session">Glossary</a>
                     </div>
-                    <div class="footer__mobile--row">
+                    <div class="footer__mobile__row">
                     <a href="" class="footer__session">Resource library</a>
                         <a href="" class="footer__session">Donate</a>
                     <a href="" class="footer__session">For health professionals</a>
@@ -332,18 +350,12 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
-        const moreBtn = document.querySelector('.js__more--menu');
-        const headerMenuNav = document.querySelector('.js_header__nav')
-        const addOpenNav = document.querySelectorAll('.js__menu__nav')
-        function showMenuNav(){
-            addOpenNav.classList.add('js__open__menu')
-        }
-        function hideMenuNav(){
-            addOpenNav.classList.remove('js__open__menu')
-        }
-        moreBtn.addEventListener('click',showMenuNav)
-
-    </script> -->
+    <script> 
+    $(document).ready(function(){
+        $('.header__more__menu').click(function(){
+            $('.header__menu__nav').slideToggle();
+        });
+    })
+    </script>
 </body>
 </html>

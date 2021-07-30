@@ -1,12 +1,13 @@
-@mixin btn{
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 14px 18px;
-        background-color: $colorsub;
-        color: #fff;
-        display: inline-block;
-}
-@mixin btn__white{
-    background-color: #fff;
-    color:$colorsub;
+@mixin borderline {
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        border: 1px solid #f15f4e;
+        z-index: -1;
+    
+    }
+    
 }

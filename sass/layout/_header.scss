@@ -2,27 +2,26 @@
     position: fixed;
     min-height: 132px;
     width: 100%;
+    height: auto;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: $colorprimary;
     &__menu{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    &__menu--logo {
-        padding: 32px 16px 16px 16px;
+    &__menu__logo {
+        padding: 36px 0 16px 0;
     }
-    &__menu--nav{
+    &__menu__nav{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
     }
-    &__menu--navtop,&__menu--navbottom{
+    &__menu__navtop,&__menu__navbottom{
         ul{
             display: flex;
-            flex-wrap: wrap;
+
             li{
                 margin: 0 16px;
                 a{
@@ -31,15 +30,16 @@
                     padding: 12px 8px;
                 }
                 &:hover{
-                    background-color: $colorsub;
+                    text-decoration: underline;
                     transition: 0.5;
                 }
             }
         }
     }
     
-    &__menu--navtop{
+    &__menu__navtop{
         line-height: 39px;
+        
         ul{
             margin: 24px 0;
             li{
@@ -54,14 +54,19 @@
             }
         }
     }
+    &__menu__navbottom{
+    }
     &__search{
         position: absolute;
+        display: flex;
         top: 18%;
-        right: calc((100% - 1072px) / 2);
+        right: calc((100% - 1080px) / 2);
         padding-right: 32px;
+    }
+    &__icon__search{
+        transform: translateY(15%);
         a{
             text-decoration: none;
-            transform: translateY(6px);
             &:hover{
                 opacity: 0.8;
                 color: #fff;
@@ -73,7 +78,10 @@
             }
         }
     }
-    &__more--menu{
+    &__search__menu{
+        display: none;
+    }
+    &__more__menu{
         display: none;
         position: absolute;
         top: 10%;
@@ -87,21 +95,8 @@
             }
         }
     }
-    &__menu--search{
+    &__menu__search{
             padding: 12px 8px;
             border:none;
-    }
-    &__menu--navbottom{
-        ul{
-            margin-bottom: 24px;
-            li{
-                a{
-                    &:hover{
-                        background-color: $colorsub;
-                    }
-                    font-size: 1.6rem;
-                }
-            }
-        }
     }
 }

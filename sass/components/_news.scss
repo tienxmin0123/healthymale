@@ -7,37 +7,41 @@
         width: 100%;
         margin: 32px 0;
     }
-    &__top--item{
+    &__top__item{
         background-color: $colorprimary;
         color: #fff;
-        width: calc(( 100% - 60px ) / 4 );
-        position: relative;
-        // width: 23%;
+        // width: calc(( 100% - 60px ) / 4 );
+        width: calc(( 100% / 4 ) - 20px);
     }
-    &__item--img{
+    &__item__img{
         width: 100%;
         height: auto;
     }
-    &__item--content{
-        height: 360px;
+    &__item__content{
+        height: 320px;
+        position: relative;
         padding: 16px 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
     }
-    &__item--title{
+    &__item__title{
         margin-bottom:  16px ;
     }
-    &__item--desc{
+    &__item__desc{
         margin-bottom:  8px ;
     }
-    &__mobile--desc{
+    &__mobile__desc{
         display: none
     }
-    &__mobile--btn{
+    &__top__btn{
         position: absolute;
         bottom: 4%;
+        // margin-top: auto;
     }
-    &__item--btn{
-        @include btn;
-        margin: 32px 0 32px 0;
+    &__item__btn{
+        
+        margin: 24px 0 24px 0;
         &:hover{
             background-color: $bgcolorcontact;
             color: #000;
@@ -46,50 +50,52 @@
     &__bottom{
         margin: 64px 0;
     }
-    &__bottom--title{
+    &__bottom__title{
         color: $colorprimary;
         margin-bottom: 24px;
     }
-    &__bottom--videos{
+    &__bottom__videos{
         display: flex;
         // flex-wrap: wrap;
         justify-content: space-between;
     }
-    &__video--main{
+    &__video__main{
         position: relative;
     }
-    &__main--video{
+    &__main__video{
         display: inline-block;
         width: 97%;
     }
-    &__video--play{
+    &__video__play{
         position: absolute;
         left: 46%;
         top: 41%;
         width: 7%;
     }
-    &__videos--sub{
+    &__videos__sub{
         width: 26%;
     }
-    &__videos--subnews{
+    &__videos__subnews{
         width: 100%;
     }
-    &__video--playsub{
+    &__video__playsub{
         position: absolute;
         transform: translateY(130%);
         left: 73%;
         width: 2%;
     }
-    &__bottom--btn{
+    &__bottom__btn{
         text-align: center;
         margin: 24px 0;
+        position: relative;
     }
     &__btn{
-        @include btn;
             padding: 12px 16px;
+            @include borderline;
         &:hover{
             background-color: $colorprimary;
             color: #fff;
         }
+        
     }
 }
