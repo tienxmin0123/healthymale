@@ -22,12 +22,12 @@
                     <input type="text" class="header__menu__search" placeholder="Search">
                     <div class="header__icon__search"><a href=""><i class="ti-search"></i></a></div>
                 </div>
-                <div class="header__menu__nav js__menu__nav">
+                <div class="header__menu__nav">
                     <div class="header__menu__navtop">
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="#about">About us</a></li>
                             <li><a href="#">Order resources</a></li>
-                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#contact">Subscribe</a></li>
                             <li><a href="#">The Male</a></li>
                         </ul>
                     </div>
@@ -40,13 +40,23 @@
                             <li><a href="#">Men's healthy</a></li>
                             <li><a href="#">Resources & tools</a></li>
                             <li><a href="#">For healthy professionals</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#footer">Contact us</a></li>
                         </ul>
                     </div>
+                    <div class="header__menu__social">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="header__more__menu js__more__menu">
+                <div class="header__more__menu">
                     <a href="#"><i class="ti-menu"></i></a>
+                </div>
+                <div class="header__close__menu">
+                    <a href="#"><i class="ti-close"></i></a>
                 </div>
             </div>
         </div>
@@ -101,7 +111,7 @@
         </div>
         <!-- end slider -->
         <!-- begin news -->
-        <div class="news">
+        <div id="news" class="news">
             <div class="container">
                 <!-- begin news top -->
                 <div class="news__top">
@@ -199,7 +209,7 @@
         </div>
         <!-- end banner -->
         <!-- begin about -->
-        <div class="about">
+        <div id="about" class="about">
             <div class="container">
                 <div class="about__news">
                     <div class="about__news__item">
@@ -254,7 +264,7 @@
         </div>
         <!-- end about -->
         <!--  begin contact -->
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="container">
                 <div class="contact__content">
                     <div><h2 class="contact__title">Subscribe to the monthly newsletter</h2></div>
@@ -265,7 +275,7 @@
                         <div class="contact__form__left">
                             <div class="contact__form__email">
                                 <label class="contact__femail" for="email">Email address:</label></br>
-                                <input type="text" required class="contact__form__control" placeholder="Your Email" name="email" value="">
+                                <input type="email" required class="contact__form__control" placeholder="Your Email" name="email" value="">
                             </div>
                             <div class="contact__form__name">
                                 <label class="contact__fname" for="name">Name:</label></br>
@@ -274,6 +284,7 @@
                             <div class="contact__form__gender">
                                 <label class="fgender" for="gender">Gender:</label></br>
                                 <select name="gender"  class="contact__form__control">
+                                    <option value="select">- Select -</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
@@ -283,7 +294,7 @@
                         <div class="contact__form__right">
                             <div class="contact__form__dob">
                                 <label class="dob" for="date of birth">Date Of Birth:</label></br>
-                                <input type="text" name="day" id="" placeholder="DD" required class="contact__form__controldob contact__form__dobdd">
+                                <input type="text" name="day" id="date of birth" placeholder="DD" required class="contact__form__controldob contact__form__dobdd">
                                 <input type="text" name="month" id="" placeholder="MM" required class="contact__form__controldob">
                                 <input type="text" name="year" id="" placeholder="YY" required class="contact__form__controldob">
                             </div>
@@ -303,7 +314,7 @@
         </div>
         <!-- end contact -->
     </div>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__menu">
                 <div class="footer__logo">
@@ -351,11 +362,17 @@
         </div>
     </footer>
     <script> 
-    $(document).ready(function(){
-        $('.header__more__menu').click(function(){
-            $('.header__menu__nav').slideToggle();
+    
+        $(document).ready(function () {
+            $('.header__more__menu').click(function () {
+                $(this).parents('.header__menu').find('.header__menu__nav').toggleClass('show__more') 
+                // && $(this).addClass('hide') || $(this).parents('.header__menu__nav').addClass('show__close');
+            });
         });
-    })
+        // const isShow = document.querySelector('.header__close__menu')
+        // function showClose(){
+        //     isShow.className.add('show__close')
+        // }
     </script>
 </body>
 </html>

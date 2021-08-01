@@ -36,12 +36,17 @@
     }
     &__radio{
         margin: 16px 0;
+        input{
+            padding: 2px;
+        }
     }
     &__radio__lable{
         margin:0 8px;
     }
+    &__btn{
+        margin: 32px 0;
+    }
     &__btn__subscribe{
-        margin-top: 32px;
         padding: 12px 24px;
         background-color: $colorprimary;
         color: #fff;

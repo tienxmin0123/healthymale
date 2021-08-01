@@ -81,7 +81,7 @@
     &__search__menu{
         display: none;
     }
-    &__more__menu{
+    &__more__menu,&__close__menu{
         display: none;
         position: absolute;
         top: 10%;
@@ -98,5 +98,8 @@
     &__menu__search{
             padding: 12px 8px;
             border:none;
+    }
+    &__menu__social{
+        display: none;
     }
 }

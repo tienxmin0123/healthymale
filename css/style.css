@@ -204,19 +204,19 @@ h1, h2, h3, h4.h5.h6 {
   display: none;
 }
 
-.header__more__menu {
+.header__more__menu, .header__close__menu {
   display: none;
   position: absolute;
   top: 10%;
   right: 0;
 }
 
-.header__more__menu a {
+.header__more__menu a, .header__close__menu a {
   text-decoration: none;
   color: #f15f4e;
 }
 
-.header__more__menu a i {
+.header__more__menu a i, .header__close__menu a i {
   font-size: 3rem;
   padding: 10px 18px 15px 18px;
 }
@@ -224,6 +224,10 @@ h1, h2, h3, h4.h5.h6 {
 .header__menu__search {
   padding: 12px 8px;
   border: none;
+}
+
+.header__menu__social {
+  display: none;
 }
 
 .slider {
@@ -659,12 +663,19 @@ h1, h2, h3, h4.h5.h6 {
   margin: 16px 0;
 }
 
+.contact__radio input {
+  padding: 2px;
+}
+
 .contact__radio__lable {
   margin: 0 8px;
 }
 
+.contact__btn {
+  margin: 32px 0;
+}
+
 .contact__btn__subscribe {
-  margin-top: 32px;
   padding: 12px 24px;
   background-color: #0e5a61;
   color: #fff;
@@ -747,7 +758,6 @@ h1, h2, h3, h4.h5.h6 {
 }
 
 .footer__social a:hover {
-  background-color: #f15f4e;
-  color: #fff;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
